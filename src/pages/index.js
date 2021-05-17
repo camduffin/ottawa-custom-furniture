@@ -1,28 +1,35 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import * as homeStyles from '../styles/index.module.scss'
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import { BsArrowRight } from 'react-icons/bs'
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+    <SEO title="Ottawa Custom Furniture" />
+    <div className={homeStyles.header}>
+      <div className={homeStyles.mainHeaderText}>
+        <h1 className={homeStyles.h1}>Ottawa Custom Furniture</h1>
+        <h2 className={homeStyles.h2}>Thoughtfully designed, beautiful & functional.</h2>
+        <Link to="/about">
+          Enter
+          <BsArrowRight />
+          </Link>
+      </div>
+      <div className={homeStyles.wood}>
+        <StaticImage
+          src="../images/wood.jpg"
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt=""
+          loading="lazy"
+          placeholder="blurred"
+          width={700}
+          height={400}
+        />
+      </div>
+    </div>
   </Layout>
 )
 
