@@ -9,10 +9,11 @@ import { BsArrowRight } from 'react-icons/bs'
 const IndexPage = () => (
   <Layout>
     <SEO title="Ottawa Custom Furniture" />
+    <div className={homeStyles.wrapper}>
     <div className={homeStyles.header}>
       <div className={homeStyles.mainHeaderText}>
-        <h1 className={homeStyles.h1}>Ottawa Custom Furniture</h1>
-        <h2 className={homeStyles.h2}>Thoughtfully designed, beautiful & functional.</h2>
+        <h1 className={homeStyles.h1}>Thoughtfully designed, beautiful & functional.</h1>
+        <h2 className={homeStyles.h2}>Ottawa Custom Furniture</h2>
         <Link to="/about">
           Enter
           <BsArrowRight />
@@ -29,6 +30,7 @@ const IndexPage = () => (
           height={400}
         />
       </div>
+    </div>
     </div>
   </Layout>
 )

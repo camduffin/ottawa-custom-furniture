@@ -9,7 +9,7 @@ body {
 .header {
     display: flex;
     width: 100%;
-    padding-top: 150px;
+    padding-top: 120px;
 
     a {
         font-size: 2rem;
@@ -19,7 +19,8 @@ body {
 }
 
 .h1 {
-    font-family: $dancing;
+    font-family: $poppins;
+    font-weight: 200;
     font-size: 6rem;
 }
 
