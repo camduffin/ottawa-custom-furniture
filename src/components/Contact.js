@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import * as contactStyles from '../styles/contact.module.scss'
-import { MdKeyboardArrowRight } from 'react-icons/md'
+import * as contactStyles from './contact.module.scss'
 import ContactForm from '../components/ContactForm'
 
 const Contact = () => {
@@ -9,12 +7,24 @@ const Contact = () => {
 
         <section className={contactStyles.enter}>
             <div className={contactStyles.wrapper}>
-                <ContactForm />
-                <div className={contactStyles.wrapper} className={contactStyles.buttonContainer}>
-                    <Link to="/about">
-                        About
-                        <MdKeyboardArrowRight className={contactStyles.arrow} />
-                    </Link>
+                <div className={contactStyles.contactContainer}>
+                    <div className={contactStyles.contactInfo}>
+                        <h2>Contact</h2>
+                        <ul className={contactStyles.contactList}>
+                            <li>
+                                <a href="mailto:contact@ottawacustomfurniture.ca" target="_blank" rel="noreferrer noopener">contact@ottawacustomfurniture.ca</a>
+                            </li>
+                            <li>
+                                <p>123 Lets Make Wooden Things Blvd.</p>
+                            </li>
+                            <li>
+                                <p>Ottawa, Ontario, Canada</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ContactForm />
+                    </div>
                 </div>
             </div>
         </section>

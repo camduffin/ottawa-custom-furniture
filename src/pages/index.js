@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as homeStyles from '../styles/index.module.scss'
+import * as homeStyles from '../components/home.module.scss'
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Enter from '../components/Contact'
@@ -7,7 +7,7 @@ import Enter from '../components/Contact'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Ottawa Custom Furniture" />
+    <SEO title="Home" />
     <section className={homeStyles.headerBG}>
       <div className={homeStyles.wrapper}>
         <div className={homeStyles.mainHeader}>

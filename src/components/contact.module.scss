@@ -1,0 +1,92 @@
+@import '../styles/partials/variables';
+@import '../styles/partials/setup';
+
+
+// Enter Site Section
+
+.enter {
+    background-color: $offwhite;
+    padding: 200px 0;
+    width: 100%;
+
+    .contact-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .form {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+
+        input[type="text"], input[type="email"], textarea {
+            padding: 10px;
+            margin: 20px 0;
+            border: none;
+            border-bottom: 2px solid $offwhite;
+            border-left: 2px solid $offwhite;
+            border-radius: 3px;
+            width: 100%;
+            @include paragraph(1.5rem);
+            color: $black;
+        }
+
+        input[type="email"] {
+            margin: 0 0 20px 0;
+        }
+
+        label {
+            display: none;
+        }
+
+        textarea {
+            height: 300px;
+            resize: none;
+            margin: 2% 0;
+        }
+
+        .button {
+            width: 35%;
+            margin: 5% 0;
+            @include button(1.5rem);
+        }
+    }
+}
+
+.contact-info {
+
+    h2 {
+        margin: 0;
+        padding: 0 0 20px 10%;
+        @include header(3.5rem);
+        opacity: .7;
+        text-transform: uppercase;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        justify-content: space-evenly;
+    }
+
+    a {
+        @include nav(2rem);
+        color: $black;
+    
+    }
+
+    p {
+        @include nav(2rem);
+        color: $black;
+        line-height: 1rem;
+    }
+
+}

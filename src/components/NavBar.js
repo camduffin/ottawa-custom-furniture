@@ -1,5 +1,5 @@
 import React from 'react'
-import * as navStyles from '../styles/index.module.scss'
+import * as navStyles from './home.module.scss'
 import { Link } from 'gatsby'
 
 const NavBar = () => {

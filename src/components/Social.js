@@ -1,5 +1,5 @@
 import React from 'react'
-import * as socialStyles from '../styles/index.module.scss'
+import * as socialStyles from './home.module.scss'
 import { FiInstagram } from 'react-icons/fi'
 import { FaPaperPlane } from 'react-icons/fa'
 

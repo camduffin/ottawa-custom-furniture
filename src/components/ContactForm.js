@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import * as contactStyles from '../styles/contact.module.scss'
+import * as contactStyles from './contact.module.scss'
 
 function ContactForm() {
     const [state, handleSubmit] = useForm("form");
@@ -20,8 +20,8 @@ function ContactForm() {
             <label htmlFor="name" className="sr-only">name</label>
             <input type="text" id="name" name="name" placeholder="name" required/>
 
-            <button type="submit" disabled={state.submitting}>
-            Send
+            <button className={contactStyles.button} type="submit" disabled={state.submitting}>
+            send
             </button>
         </form>
     );

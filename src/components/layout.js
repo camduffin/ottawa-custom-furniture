@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Footer from './Footer'
 import Header from "./Header"
-import * as layoutStyles from '../styles/index.module.scss'
+import * as layoutStyles from './home.module.scss'
 import Social from './Social'
 
 
