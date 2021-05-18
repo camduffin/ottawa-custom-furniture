@@ -21,11 +21,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Ottawa Custom Furniture`,
+        short_name: `OCF`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#F5F5EF`,
+        theme_color: `#883F39`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
