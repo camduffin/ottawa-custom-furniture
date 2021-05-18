@@ -4,13 +4,15 @@ import { Link } from 'gatsby'
 
 const NavBar = () => {
     return (
-        <nav className={navStyles.nav}>
-            <li>
-                <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="/about">About</Link>
-            </li>
+        <nav>
+            <ul className={navStyles.nav}>
+                <li>
+                    <Link activeClassName={navStyles.active} to="/">Home</Link>
+                </li>
+                <li>
+                    <Link activeClassName={navStyles.active} to="/about">About</Link>
+                </li>
+            </ul>
         </nav>
     )
 }

@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from "gatsby"
 import NavBar from './NavBar'
 
-
 const Header = ({ siteTitle }) => (
   
     <header className={headerStyles.header}>
@@ -12,13 +11,14 @@ const Header = ({ siteTitle }) => (
         <div className={headerStyles.logo}>
           <Link to="/">
             <StaticImage
-              src="../images/logo.png"
+            className={headerStyles.svg}
+              src="../images/logo-ottawa.svg"
               formats={["AUTO", "WEBP", "AVIF"]}
               alt=""
               loading="lazy"
               placeholder="blurred"
-              width={150}
-              height={150}
+              width={200}
+              height={100}
             />
           </Link>
         </div>

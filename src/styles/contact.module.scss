@@ -1,0 +1,49 @@
+@import './partials/variables';
+@import './partials/setup';
+
+// Enter Site Section
+
+.enter {
+    background-color: $offwhite;
+    padding: 200px 0;
+    display: flex;
+    width: 100%;
+
+    .form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        input {
+            height: 50px;
+        }
+
+        textarea {
+            height: 200px;
+            resize: none;
+        }
+    }
+}
+
+.button-container {
+    width: 100%;
+
+    a {
+        @include header(3rem);
+        text-transform: uppercase;
+        color: $brown;
+        transition: all .2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: $black;
+            opacity: .5;
+        }
+    }
+
+    .arrow {
+        position: relative;
+        top: 15px;
+        font-size: 5rem;
+    }
+}

@@ -7,7 +7,7 @@ const Footer = () => {
     return (
 
         <footer className={footerStyles.footer}>
-            <p>© {new Date().getFullYear()} Ottawa Custom Furniture</p>
+            <p className={footerStyles.footerPara}>© {new Date().getFullYear()} Ottawa Custom Furniture</p>
         </footer>
 
     )

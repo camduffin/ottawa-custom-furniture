@@ -1,43 +1,23 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import * as homeStyles from '../styles/index.module.scss'
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import { BsArrowRight } from 'react-icons/bs'
+import Enter from '../components/Contact'
+
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Ottawa Custom Furniture" />
-    <div className={homeStyles.headerBG}>
-    <div className={homeStyles.wrapper}>
-    <div className={homeStyles.mainHeader}>
-      <div className={homeStyles.mainHeaderText}>
-        {/* <h1 className={homeStyles.h1}>Thoughtfully designed, beautiful & functional.</h1>
-        <h2 className={homeStyles.h2}>Ottawa Custom Furniture</h2> */}
-      </div>
-      <div className={homeStyles.wood}>
-        {/* <StaticImage
-          src="../images/wood.jpg"
-          formats={["AUTO", "WEBP", "AVIF"]}
-          alt=""
-          loading="lazy"
-          placeholder="blurred"
-          width={700}
-          height={400}
-        /> */}
-      </div>
-    </div>
-    </div>
-    </div>
-    <section>
-      <div className={homeStyles.wrapper} className={homeStyles.buttonContainer}>
-      <Link to="/about">
-          Enter
-          <BsArrowRight />
-          </Link>
+    <section className={homeStyles.headerBG}>
+      <div className={homeStyles.wrapper}>
+        <div className={homeStyles.mainHeader}>
+          <div className={homeStyles.mainHeaderText}>
+            <h1 className={homeStyles.h1}>Thoughtfully designed, beautiful & functional.</h1>
+          </div>
+        </div>
       </div>
     </section>
+    <Enter />
   </Layout>
 )
 

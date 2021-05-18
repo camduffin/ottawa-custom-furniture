@@ -16,4 +16,19 @@ $red: #E8341A;
 $grey: #a7bbc7;
 $black: #151515;
 $offwhite: #F5F5EF;
+$logowhite: #F7EFE9;
+$brown: #883F39;
+
+// mixins
+
+
+@mixin header($sizeValue) {
+    font-size: $sizeValue;
+    font-family: $poppins;
+}
+
+@mixin nav($sizeValue) {
+    font-size: $sizeValue;
+    font-family: $poppins;
+}
 

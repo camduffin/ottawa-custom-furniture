@@ -1,9 +1,19 @@
 @import './partials/variables';
 @import './partials/setup';
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: $offwhite;
+// Layout Styles
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    flex-grow: 1;
 }
 
 .headerBG {
@@ -12,26 +22,18 @@ body {
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
-
 }
 
 .main-header {
     display: flex;
     width: 100%;
-    padding-top: 120px;
-    position: fixed;
-
-    a {
-        font-size: 2rem;
-        padding-top: 50px;
-        color: black;
-    }
 }
 
 .h1 {
-    font-family: $poppins;
+    @include header(6rem);
+    color: $black;
     font-weight: 200;
-    font-size: 6rem;
+    width: 50%;
 }
 
 .main-header-text {
@@ -41,17 +43,11 @@ body {
     justify-content: center;
     padding-left: 5%;
     opacity: .8;
+    height: 100vh;
 
     h2 {
         font-size: 1.2rem;
     }
-}
-
-.wood {
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
 }
 
 .logo {
@@ -71,34 +67,74 @@ body {
 
 .header {
     width: 100%;
-    position: fixed;
-
+    position: absolute;
+    height: 10vh;
+    z-index: 100000;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 2%;
+    transition: top 0.6s;
+    margin: 0;
 }
 
-.nav {
+// Nav Bar
 
+.nav {
     display: flex;
     width: 200px;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 40px;
+
+    a {
+        @include nav(1.7rem);
+        color: $brown;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: $black;
+            border-bottom: 2px solid $black;
+        }
+    }
+
+    .active {
+        opacity: .4;
+    }
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
     margin: 0 auto;
     width: 100%;
     text-align: center;
-}
+    padding-top: 200px;
 
-.button-container {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    width: 100%;
-    a {
-        font-size: 4rem;
+    .footer-para {
+        @include header(1.5rem);
+        color: $brown;
     }
 }
+
+.social-list {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-top: 100px;
+    align-items: center;
+    height: 10vh;
+}
+
+.social-link {
+    color: $brown;
+    font-size: 3rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $black;
+    }
+}
+
