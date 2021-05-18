@@ -7,7 +7,7 @@ import NavBar from './NavBar'
 
 const Header = ({ siteTitle }) => (
   
-    <header>
+    <header className={headerStyles.header}>
       <div className={headerStyles.headerContainer}>
         <div className={headerStyles.logo}>
           <Link to="/">

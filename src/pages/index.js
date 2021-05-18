@@ -9,18 +9,15 @@ import { BsArrowRight } from 'react-icons/bs'
 const IndexPage = () => (
   <Layout>
     <SEO title="Ottawa Custom Furniture" />
+    <div className={homeStyles.headerBG}>
     <div className={homeStyles.wrapper}>
-    <div className={homeStyles.header}>
+    <div className={homeStyles.mainHeader}>
       <div className={homeStyles.mainHeaderText}>
-        <h1 className={homeStyles.h1}>Thoughtfully designed, beautiful & functional.</h1>
-        <h2 className={homeStyles.h2}>Ottawa Custom Furniture</h2>
-        <Link to="/about">
-          Enter
-          <BsArrowRight />
-          </Link>
+        {/* <h1 className={homeStyles.h1}>Thoughtfully designed, beautiful & functional.</h1>
+        <h2 className={homeStyles.h2}>Ottawa Custom Furniture</h2> */}
       </div>
       <div className={homeStyles.wood}>
-        <StaticImage
+        {/* <StaticImage
           src="../images/wood.jpg"
           formats={["AUTO", "WEBP", "AVIF"]}
           alt=""
@@ -28,10 +25,19 @@ const IndexPage = () => (
           placeholder="blurred"
           width={700}
           height={400}
-        />
+        /> */}
       </div>
     </div>
     </div>
+    </div>
+    <section>
+      <div className={homeStyles.wrapper} className={homeStyles.buttonContainer}>
+      <Link to="/about">
+          Enter
+          <BsArrowRight />
+          </Link>
+      </div>
+    </section>
   </Layout>
 )
 
