@@ -3,6 +3,7 @@
 
 // Layout Styles
 
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -96,8 +97,8 @@
 
         &:hover,
         &:focus {
-            color: $brown;
-            border-bottom: 2px solid $brown;
+            color: $black;
+            border-bottom: 2px solid $black;
         }
     }
 
@@ -110,7 +111,7 @@
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 50px;
 
     .footer-para {
         @include header(1.5rem);
@@ -150,4 +151,6 @@
         opacity: 1;
     }
 }
+
+
 

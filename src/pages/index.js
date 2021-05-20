@@ -1,13 +1,13 @@
 import * as React from "react"
 import * as homeStyles from '../components/home.module.scss'
 import Layout from "../components/Layout"
-import SEO from "../components/SEO"
-import Enter from '../components/Contact'
+import Seo from "../components/Seo"
+import Contact from '../components/Contact'
 
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo title="Home" />
     <section className={homeStyles.headerBG}>
       <div className={homeStyles.wrapper}>
         <div className={homeStyles.mainHeader}>
@@ -17,7 +17,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <Enter />
+    <Contact />
   </Layout>
 )
 

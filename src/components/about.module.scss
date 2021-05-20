@@ -1,0 +1,32 @@
+@import '../styles/partials/variables';
+@import '../styles/partials/setup';
+
+body {
+    font-family: $poppins;
+}
+
+.about-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20%;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(../images/hanger.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    background-position: 40% 30%;
+}
+
+.h1 {
+    @include header(6rem);
+    color: $brown;
+    font-weight: 400;
+}
+
+p {
+    @include paragraph(2rem);
+    color: $black;
+}
