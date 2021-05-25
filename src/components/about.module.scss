@@ -13,20 +13,29 @@ body {
     padding-left: 20%;
     flex-direction: column;
     height: 100vh;
-    background-image: url(../images/hanger.jpg);
+    background-image: url(../images/bed.jpg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    background-position: 40% 30%;
+    background-position: 40% 100%;
 }
 
 .h1 {
     @include header(6rem);
-    color: $brown;
-    font-weight: 400;
+    color: $offwhite;
+    font-weight: 300;
 }
 
 p {
     @include paragraph(2rem);
     color: $black;
+}
+
+.gallery-section {
+    height: 100vh;
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
