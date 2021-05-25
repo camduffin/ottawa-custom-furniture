@@ -5,6 +5,7 @@ module.exports = {
     author: `@camduffin`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `react-icons`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
