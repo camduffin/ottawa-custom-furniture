@@ -4,13 +4,19 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const NavBar = () => {
     return (
-        <nav>
+        <nav className={navStyles.navContainer}>
             <ul className={navStyles.nav}>
                 <li>
-                    <AniLink activeClassName={navStyles.active} cover to="/" bg="#a7bbc7" duration={2}>Home</AniLink>
+                    <AniLink activeClassName={navStyles.active} cover to="/" bg="#a7bbc7" duration={1}>Home</AniLink>
                 </li>
                 <li>
-                    <AniLink activeClassName={navStyles.active} cover to="/about" bg="#a7bbc7" duration={2}>Work</AniLink>
+                    <AniLink activeClassName={navStyles.active} cover to="/work" bg="#a7bbc7" duration={1}>Work</AniLink>
+                </li>
+                <li>
+                    <AniLink activeClassName={navStyles.active} cover to="/about" bg="#a7bbc7" duration={1}>About</AniLink>
+                </li>
+                <li>
+                    <AniLink activeClassName={navStyles.active} cover to="/faq" bg="#a7bbc7" duration={1}>FAQ</AniLink>
                 </li>
             </ul>
         </nav>

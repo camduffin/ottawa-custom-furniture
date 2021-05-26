@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from "gatsby"
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import NavBar from './NavBar'
-import logo from '../images/new-logo.png'
 
 const Header = ({ siteTitle }) => (
   
