@@ -1,10 +1,6 @@
 @import '../styles/partials/variables';
 @import '../styles/partials/setup';
 
-body {
-    font-family: $poppins;
-}
-
 .about-header {
     display: flex;
     width: 100%;
@@ -21,9 +17,10 @@ body {
 }
 
 .h1 {
-    @include header(6rem);
+    @include header(4rem);
     color: $offwhite;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 p {
@@ -31,23 +28,38 @@ p {
     color: $black;
 }
 
-.work-writeup {
-    width: 60%;
+.work-writeup-section {
     padding: 100px 0;
-    @include paragraph(2rem);
-    color: $brown;
+}
+
+.work-writeup {
+    width: 100%;
+    @include paragraphpoppins(2rem);
+    color: $black;
+    padding: 70px 200px;
+
+    a {
+        color: $brown;
+        transition: all .2s ease-in-out;
+        opacity: .8;
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+    }
 }
 
 .gallery-section {
-    height: 100vh;
     display: flex;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     justify-content: center;
+    padding: 50px 0;
 
     ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
         margin: 0 auto;
@@ -60,24 +72,52 @@ p {
 
         li {
             transition: all .2s ease-in-out;
-            padding: 5px;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            margin: 15px;
             
             h4 {
-                @include paragraph(1.6rem);
-                font-family: $poppins;
+                @include gallery(1.2rem);
                 font-weight: 300;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .questions {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .2s ease-in-out;
+
+            p {
+                @include paragraphpoppins(2rem);
+
+            }
+
+            a {
+                color: $brown;
+            }
+
+            a:hover,
+            a:focus {
+                color: $darkgrey;
+            }
+
+            svg {
+                position: relative;
+                top: 4px;
+                color: $brown;
+                left: 5px;
+                transition: all .2s ease-in-out;
+            }
+
+            svg:hover,
+            svg:focus {
+                color: $darkgrey;
             }
         }
-
-        li:hover,
-        li:focus {
-            opacity: .7;
-            transform: scale(.95);
-        }
         
-
     }
 }

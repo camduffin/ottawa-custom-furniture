@@ -3,44 +3,59 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
+
+
 $opensans: 'Open Sans', sans-serif;
-$dancing: 'Dancing Script', cursive;
 $poppins: 'Poppins', sans-serif;
-$jura: 'Jura', sans-serif;
 $michroma: 'Michroma', sans-serif;
+
 
 // colors
 
 $lightbrown: #a0937d;
-$red: #E8341A;
 $grey: #a7bbc7;
+$darkgrey: #464646;
 $black: #151515;
-$offwhite: #F5F5EF;
+$white: #ffffff;
+$offwhite: #e1e1e1;
 $logowhite: #F7EFE9;
-$brown: #883F39;
+$brown: #5b371a;
 $opaque: rgba(133, 133, 133, 0.5);
 
 // mixins
 
-@mixin header($sizeValue) {
+@mixin mainheader($sizeValue) {
     font-size: $sizeValue;
     font-family: $poppins;
+}
+
+@mixin header($sizeValue) {
+    font-size: $sizeValue;
+    font-family: $michroma;
 }
 
 @mixin nav($sizeValue) {
     font-size: $sizeValue;
-    font-family: $poppins;
+    font-family: $michroma;
 }
 
 @mixin paragraph($sizeValue) {
     font-size: $sizeValue;
+    font-family: $michroma;
+    letter-spacing: .1rem;
+}
+
+@mixin paragraphpoppins($sizeValue) {
+    font-size: $sizeValue;
     font-family: $poppins;
+}
+
+@mixin gallery($sizeValue) {
+    font-size: $sizeValue;
+    font-family: $michroma;
+    letter-spacing: .15rem;
 }
 
 @mixin button($sizeValue) {
@@ -51,7 +66,7 @@ $opaque: rgba(133, 133, 133, 0.5);
         transition: all .2s ease-in-out;
         cursor: pointer;
 
-        @include paragraph(1.5rem);
+        @include paragraphpoppins(1.5rem);
 
         &:hover,
         &:focus {

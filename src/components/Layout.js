@@ -23,11 +23,11 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div className={layoutStyles.mainContainer}>
         <main className={layoutStyles.main}>{children}</main>
-        <aside>
-          <Social />
-        </aside>
-        <Footer />
       </div>
+        <nav>
+          <Social />
+        </nav>
+        <Footer />
     </>
   )
 }

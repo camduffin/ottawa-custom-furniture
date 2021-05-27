@@ -1,0 +1,11 @@
+@import '../styles/partials/variables';
+@import '../styles/partials/setup';
+
+.faq-section {
+    padding: 200px 0;
+}
+
+.h1 {
+    @include header(4rem);
+    font-weight: 300;
+}

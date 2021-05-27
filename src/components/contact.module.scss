@@ -1,11 +1,7 @@
 @import '../styles/partials/variables';
 @import '../styles/partials/setup';
 
-
-// Enter Site Section
-
 .enter {
-    background-color: $offwhite;
     padding: 75px 0;
     width: 100%;
 
@@ -28,8 +24,9 @@
             border-left: 2px solid $offwhite;
             border-radius: 3px;
             width: 100%;
-            @include paragraph(1.5rem);
+            @include paragraphpoppins(1.5rem);
             color: $black;
+            background-color: $offwhite;
         }
 
         input[type="email"] {
@@ -49,7 +46,7 @@
         .button {
             width: 35%;
             margin: 5% 0;
-            @include button(1.5rem);
+            @include button(1rem);
         }
     }
 }
@@ -58,10 +55,14 @@
 
     h2 {
         margin: 0;
-        padding: 0 0 20px 10%;
-        @include header(3.5rem);
+        padding-bottom: 15px;
+        padding-top: 140px;
+        @include header(3rem);
         opacity: .7;
         text-transform: uppercase;
+        font-weight: 300;
+        border-bottom: 2px solid $darkgrey;
+        width: 70%;
     }
 
     li {
@@ -73,20 +74,14 @@
     .contact-list {
         display: flex;
         flex-direction: column;
-        height: 150px;
-        justify-content: space-evenly;
+        height: 50%;
+        justify-content: center;
     }
 
-    a {
-        @include nav(2rem);
+    a, p {
+        @include paragraphpoppins(2rem);
         color: $black;
-    
-    }
-
-    p {
-        @include nav(2rem);
-        color: $black;
-        line-height: 1rem;
+        padding: 20px 0;
     }
 
 }

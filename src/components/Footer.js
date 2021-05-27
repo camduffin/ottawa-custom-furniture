@@ -1,8 +1,6 @@
 import React from 'react'
 import * as footerStyles from './home.module.scss'
 
-
-
 const Footer = () => {
     return (
 

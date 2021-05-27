@@ -1,8 +1,17 @@
 @import '../styles/partials/variables';
 @import '../styles/partials/setup';
 
-// Layout Styles
+// Main Styles
 
+body {
+    background-color: $white;
+}
+
+ul {
+    padding: 0;
+}
+
+// Layout Styles
 
 .main-container {
     display: flex;
@@ -32,7 +41,7 @@
 }
 
 .h1 {
-    @include header(6rem);
+    @include mainheader(6rem);
     color: $offwhite;
     font-weight: 300;
     width: 50%;
@@ -70,13 +79,26 @@
 
 .header {
     width: 100%;
-    position: absolute;
-    height: 10vh;
+    position: fixed;
+    height: 13%;
     z-index: 100000;
     display: flex;
     flex-wrap: nowrap;
     transition: top 0.6s;
     margin: 0;
+    background-color: $opaque;
+}
+
+.svg {
+    opacity: .9;
+    transition: all .1s ease-in-out;
+    margin-left: 50px;
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+        transform: scale(1.03);
+    }
 }
 
 // Nav Bar
@@ -89,26 +111,24 @@
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    width: 90%;
-    padding-left: 60%;
+    width: 95%;
+    padding-left: 50%;
 
     a {
-        @include nav(1.7rem);
+        @include nav(1.5rem);
         color: $offwhite;
         text-transform: uppercase;
         cursor: pointer;
-        transition: all .2s ease-in-out;
-        opacity: .5;
+        transition: all .13s ease-in-out;
 
         &:hover,
         &:focus {
-            color: $black;
-            border-bottom: 2px solid $black;
+            color: $brown;
         }
     }
 
     .active {
-        opacity: 1;
+        color: $black;
     }
 }
 
@@ -116,45 +136,39 @@
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 1%;
 
     .footer-para {
-        @include header(1.5rem);
-        color: $brown;
+        @include header(1.3rem);
+        letter-spacing: .3rem;
+        color: $black;
     }
 }
 
 .social-list {
     display: flex;
-    width: 250px;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-top: 100px;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    height: 10vh;
+    padding: 1%;
+
+    li {
+        padding: 1%;
+    }
 }
 
 .social-link {
-    color: $brown;
+    color: $black;
     font-size: 3rem;
     transition: all .2s ease-in-out;
     cursor: pointer;
 
     &:hover,
     &:focus {
-        color: $black;
+        color: $brown;
+        transform: scale(1.1);
     }
-}
 
-.svg {
-    margin: 20px;
-    opacity: .7;
-    transition: all .2s ease-in-out;
-
-    &:hover,
-    &:focus {
-        opacity: 1;
-    }
 }
 
 
