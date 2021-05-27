@@ -51,7 +51,7 @@ const Header = ({ siteTitle }) => {
               <AniLink fade to="/">
                 <StaticImage
                   className={headerStyles.svg}
-                  src="../images/logo.png"
+                  src="../images/wow-logo.png"
                   formats={["AUTO", "WEBP", "AVIF"]}
                   alt=""
                   loading="lazy"

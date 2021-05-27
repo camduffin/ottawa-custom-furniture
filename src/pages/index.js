@@ -14,6 +14,14 @@ const IndexPage = () => (
           <div className={homeStyles.mainHeaderText}>
             <h1 className={homeStyles.h1}>Thoughtfully designed, beautiful & functional.</h1>
           </div>
+          <a href="#contact">
+            <div class={homeStyles.arrow}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    down arrow
+            </div>
+        </a>
         </div>
       </div>
     </section>

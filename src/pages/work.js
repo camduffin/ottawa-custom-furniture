@@ -28,10 +28,16 @@ const WorkPage = () => {
       <Seo title="Work" />
       <section className={workStyles.aboutHeader}>
           <h1 className={workStyles.h1}>Work</h1>
-          <div className={workStyles.wrapper}>
-          </div>
+          <a href="#gallery">
+            <div class={workStyles.arrow}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    down arrow
+            </div>
+        </a>
       </section>
-      <section className={workStyles.workWriteupSection}>
+      <section className={workStyles.workWriteupSection} id="gallery">
         <div className={workStyles.wrapper}>
           <p className={workStyles.workWriteup}>Cabinetry & Woodworking below - it's all really great and I just really want you to like it, ok? Check out my <a href="https://www.instagram.com/ottawacustomfurniture/" target="_blank" rel="noreferrer noopener">instagram</a> for more commissions.</p>
         </div>
