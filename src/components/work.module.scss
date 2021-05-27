@@ -40,12 +40,11 @@ p {
 
     a {
         color: $brown;
-        transition: all .2s ease-in-out;
-        opacity: .8;
+        transition: all .15s ease-in-out;
 
         &:hover,
         &:focus {
-            opacity: 1;
+            color: $opaque;
         }
     }
 }
@@ -56,6 +55,8 @@ p {
     margin: 0 auto;
     justify-content: center;
     padding: 50px 0;
+    border-bottom: 2.5px solid $brown;
+    border-top: 2.5px solid $brown;
 
     ul {
         display: flex;
@@ -93,16 +94,16 @@ p {
 
             p {
                 @include paragraphpoppins(2rem);
-
             }
 
             a {
                 color: $brown;
+                transition: all .15s ease-in-out;
             }
 
             a:hover,
             a:focus {
-                color: $darkgrey;
+                color: $opaque;
             }
 
             svg {

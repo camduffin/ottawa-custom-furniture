@@ -33,7 +33,7 @@ const WorkPage = () => {
       </section>
       <section className={workStyles.workWriteupSection}>
         <div className={workStyles.wrapper}>
-          <p className={workStyles.workWriteup}>Check out some of my work below - it's really great and I just really want you to like it, ok? Check out my <a href="https://www.instagram.com/ottawacustomfurniture/" target="_blank" rel="noreferrer noopener">instagram</a> for more commissions if you want.</p>
+          <p className={workStyles.workWriteup}>Cabinetry & Woodworking below - it's all really great and I just really want you to like it, ok? Check out my <a href="https://www.instagram.com/ottawacustomfurniture/" target="_blank" rel="noreferrer noopener">instagram</a> for more commissions.</p>
         </div>
       </section>
       <section className={workStyles.gallerySection}>
