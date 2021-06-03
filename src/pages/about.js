@@ -1,18 +1,15 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-import PageTransition from 'gatsby-plugin-page-transitions';
 import * as aboutStyles from '../components/about.module.scss'
 import { StaticImage } from 'gatsby-plugin-image';
 
 const AboutPage = () => {
 
-    const computerDesk = '../images/computer-desk2.jpg';
     const murray = '../images/murray.jpg';
 
     return (
         <Layout>
-            <PageTransition>
             <Seo title="About" />
             <section className={aboutStyles.aboutSection}>
                 <div className={aboutStyles.wrapper}>
@@ -32,7 +29,6 @@ const AboutPage = () => {
                     </div>
                 </div>
             </section>
-            </PageTransition>
         </Layout>
     )
 }

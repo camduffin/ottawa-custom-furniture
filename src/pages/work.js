@@ -5,7 +5,7 @@ import * as workStyles from '../components/work.module.scss'
 import { StaticImage } from 'gatsby-plugin-image';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import PageTransition from 'gatsby-plugin-page-transitions';
+
 
 
 const WorkPage = () => {
@@ -25,7 +25,7 @@ const WorkPage = () => {
 
   return (
 
-      <PageTransition>
+
     <Layout>
       <Seo title="Work" />
       <section className={workStyles.aboutHeader}>
@@ -186,7 +186,6 @@ const WorkPage = () => {
         </div>
       </section>
     </Layout>
-    </PageTransition>
 
   )
 
