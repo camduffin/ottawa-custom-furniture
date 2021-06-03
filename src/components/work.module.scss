@@ -60,6 +60,9 @@
     color: $offwhite;
     font-weight: 300;
     text-transform: uppercase;
+    border-bottom: 2.5px solid $lightbrown;
+    width: 20%;
+    padding-bottom: 8px;
 }
 
 p {
@@ -74,16 +77,16 @@ p {
 .work-writeup {
     width: 100%;
     @include paragraphpoppins(2rem);
-    color: $black;
+    color: $block;
     padding: 70px 200px;
 
     a {
-        color: $brown;
+        color: $lightbrown;
         transition: all .15s ease-in-out;
 
         &:hover,
         &:focus {
-            color: $opaque;
+            color: $brown;
         }
     }
 }
@@ -94,8 +97,8 @@ p {
     margin: 0 auto;
     justify-content: center;
     padding: 50px 0;
-    border-bottom: 2.5px solid $brown;
-    border-top: 2.5px solid $brown;
+    border-bottom: 2.5px solid $lightbrown;
+    border-top: 2.5px solid $lightbrown;
 
     ul {
         display: flex;

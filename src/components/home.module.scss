@@ -58,8 +58,8 @@ ul {
     height: 100vh;
     background-image: url(../images/wooden-bg-two.jpg);
     width: 100%;
-    background-attachment: fixed;
     background-size: cover;
+    background-attachment: fixed;
     background-position: 10% 100%;
 }
 
@@ -108,7 +108,7 @@ ul {
 .header {
     width: 100%;
     position: fixed;
-    height: 13%;
+    height: 11%;
     z-index: 100000;
     display: flex;
     flex-wrap: nowrap;
@@ -118,7 +118,7 @@ ul {
 }
 
 .svg {
-    opacity: .9;
+    opacity: .7;
     transition: all .1s ease-in-out;
     margin-left: 50px;
     color: $white;
@@ -178,12 +178,12 @@ ul {
 .nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 25px;
     width: 95%;
     padding-left: 50%;
 
     a {
-        @include nav(1.5rem);
+        @include nav(1.3rem);
         color: $offwhite;
         text-transform: uppercase;
         cursor: pointer;
@@ -191,12 +191,12 @@ ul {
 
         &:hover,
         &:focus {
-            color: $brown;
+            color: $lightbrown;
         }
     }
 
     .active {
-        color: $black;
+        color: $grey;
     }
 }
 
@@ -218,7 +218,7 @@ ul {
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 1%;
+    padding-top: 3%;
 
     li {
         padding: 1%;
@@ -233,7 +233,7 @@ ul {
 
     &:hover,
     &:focus {
-        color: $brown;
+        color: $lightbrown;
         transform: scale(1.1);
     }
 

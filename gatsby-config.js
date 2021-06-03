@@ -5,10 +5,12 @@ module.exports = {
     author: `@camduffin`,
   },
   plugins: [
+    `gatsby-plugin-page-transitions`,
     `gatsby-plugin-transition-link`,
     `react-icons`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-background-image`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

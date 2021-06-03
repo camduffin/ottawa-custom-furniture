@@ -21,6 +21,7 @@ const ScrollArrow = () =>{
     window.addEventListener('scroll', checkScrollTop)
 
     return (
+        
         <BsChevronDoubleUp className={scrollStyles.scrollTop} onClick={scrollTop} style={{height: 40, display: showScroll ? 'flex' : 'none'}}/>
     );
 }

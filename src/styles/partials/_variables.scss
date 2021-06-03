@@ -14,9 +14,10 @@ $michroma: 'Michroma', sans-serif;
 // colors
 
 $lightbrown: #a0937d;
-$grey: #a7bbc7;
+$grey: #e4bb88;
 $darkgrey: #464646;
 $black: #151515;
+$block: #2d3239;
 $white: #ffffff;
 $offwhite: #e1e1e1;
 $logowhite: #F7EFE9;
@@ -45,11 +46,13 @@ $darkopaque: rgba(34, 34, 34, 0.5);
     font-size: $sizeValue;
     font-family: $michroma;
     letter-spacing: .1rem;
+    color: $block;
 }
 
 @mixin paragraphpoppins($sizeValue) {
     font-size: $sizeValue;
     font-family: $poppins;
+    color: $block;
 }
 
 @mixin gallery($sizeValue) {

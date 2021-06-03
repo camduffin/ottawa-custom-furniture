@@ -8,14 +8,14 @@ import { useState, useEffect } from 'react'
 const Header = ({ siteTitle }) => {
 
     function debounce(func, wait, immediate) {
-      var timeout;
+      let timeout;
       return function() {
-          var context = this, args = arguments;
-          var later = function() {
+          let context = this, args = arguments;
+          let later = function() {
               timeout = null;
               if (!immediate) func.apply(context, args);
           };
-          var callNow = immediate && !timeout;
+          let callNow = immediate && !timeout;
           clearTimeout(timeout);
           timeout = setTimeout(later, wait);
           if (callNow) func.apply(context, args);
@@ -52,12 +52,11 @@ const Header = ({ siteTitle }) => {
                 <StaticImage
                   className={headerStyles.svg}
                   src="../images/wow-logo.png"
-                  formats={["AUTO", "WEBP", "AVIF"]}
+                  formats={["AUTO", "WEBP", "AVIF", "jpg"]}
                   alt=""
-                  loading="lazy"
                   placeholder="blurred"
-                  width={100}
-                  height={100}
+                  width={80}
+                  height={80}
                 />
               </AniLink>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import * as navStyles from './home.module.scss'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { Link } from 'gatsby'
@@ -9,16 +9,16 @@ const NavBar = () => {
         <nav className={navStyles.navContainer}>
             <ul className={navStyles.nav}>
                 <li>
-                    <AniLink activeClassName={navStyles.active} cover to="/" bg="#e1e1e1" duration={1}>Home</AniLink>
+                    <AniLink activeClassName={navStyles.active} fade to="/" >Home</AniLink>
                 </li>
                 <li>
-                    <AniLink activeClassName={navStyles.active} cover to="/work" bg="#e1e1e1" duration={1}>Work</AniLink>
+                    <AniLink activeClassName={navStyles.active} fade to="/work">Work</AniLink>
                 </li>
                 <li>
-                    <AniLink activeClassName={navStyles.active} cover to="/about" bg="#e1e1e1" duration={1}>About</AniLink>
+                    <AniLink activeClassName={navStyles.active} fade to="/about" duration={1}>About</AniLink>
                 </li>
                 <li>
-                    <AniLink activeClassName={navStyles.active} cover to="/faq" bg="#e1e1e1" duration={1}>FAQ</AniLink>
+                    <AniLink activeClassName={navStyles.active} fade to="/faq" duration={1}>FAQ</AniLink>
                 </li>
                 <li>
                     <Link to="/#contact">Contact</Link>

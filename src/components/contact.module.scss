@@ -57,7 +57,7 @@
         margin: 0;
         padding-bottom: 15px;
         padding-top: 140px;
-        @include header(2.5rem);
+        @include header(2rem);
         opacity: .7;
         text-transform: uppercase;
         font-weight: 300;
@@ -85,7 +85,6 @@
 
     a, p {
         @include paragraphpoppins(2rem);
-        color: $black;
         padding: 20px 0;
     }
 
