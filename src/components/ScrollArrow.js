@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { BsChevronDoubleUp } from 'react-icons/bs';
 import * as scrollStyles from './home.module.scss'
+import { useEffect } from 'react'; 
 
 const ScrollArrow = () =>{
 
@@ -18,7 +19,10 @@ const ScrollArrow = () =>{
     window.scrollTo({top: 0, behavior: 'smooth'});
     };
 
-    window.addEventListener('scroll', checkScrollTop)
+    useEffect(() => {
+        window.addEventListener('scroll', checkScrollTop)
+    });
+
 
     return (
         
