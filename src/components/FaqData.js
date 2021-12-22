@@ -1,20 +1,20 @@
 export const FaqData = [
 
     {
-        question: 'Is the sky blue?',
-        answer: 'No'
+        question: `Is the sky blue?`,
+        answer: `No`
     },
     {
         question: `What's wrong with the world today?`,
-        answer: 'No'
+        answer: `Everything`
     },
     {
         question: `But, why though?`,
-        answer: 'No'
+        answer: `Because, it's not that big of a deal though really.`
     },
     {
-        question: 'Is the sky blue?',
-        answer: 'No'
+        question: `Is the sky blue?`,
+        answer: `Yeah, IDK maybe.`
     }
 
 ];
