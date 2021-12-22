@@ -6,7 +6,7 @@ import Contact from '../components/Contact'
 
 
 const IndexPage = () => {
-  
+
   return (
         
         <Layout>
@@ -14,9 +14,7 @@ const IndexPage = () => {
           <section className={homeStyles.headerBG}>
             <div className={homeStyles.wrapper}>
               <div className={homeStyles.mainHeader}>
-                <div className={homeStyles.mainHeaderText}>
-                  <h1 className={homeStyles.h1}>Thoughtfully designed, beautiful & functional.</h1>
-                </div>
+                <h1 className={homeStyles.h1}>Thoughtfully designed, beautiful & functional.</h1>
                 <a href="#contact">
                   <div class={homeStyles.arrow}>
                     <span></span>

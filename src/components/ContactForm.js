@@ -16,7 +16,7 @@ function ContactForm() {
             <input id="email" type="email" name="email" placeholder="email" required />
             <ValidationError prefix="Email" field="email" errors={state.errors} />
             <label htmlFor="message" className="sr-only">message</label>
-            <textarea id="message" name="message" placeholder="message" required/>
+            <textarea id="message" name="message" placeholder="chya boi waddup" required/>
             <ValidationError prefix="Message" field="message" errors={state.errors} />
 
 

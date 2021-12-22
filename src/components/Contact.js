@@ -15,10 +15,10 @@ const Contact = () => {
                                 <a href="mailto:contact@ottawacustomfurniture.ca" target="_blank" rel="noreferrer noopener">contact@ottawacustomfurniture.ca</a>
                             </li>
                             <li>
-                                <p>123 Lets Make Wooden Things Blvd.</p>
+                                <p>123 I Gotta Piece'a Wood Right Here Cres.</p>
                             </li>
                             <li>
-                                <p>Ottawa, Ontario, Canada</p>
+                                <p>Earth, Earth, Earth</p>
                             </li>
                         </ul>
                     </div>
