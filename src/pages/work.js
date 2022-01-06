@@ -1,4 +1,5 @@
 import * as React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import * as workStyles from '../components/work.module.scss'
@@ -22,6 +23,20 @@ const WorkPage = () => {
   const woodenTable = '../images/wooden-table-one.jpg';
   const tallBench = '../images/tall-bench2.jpg';
 
+  const data = useStaticQuery(graphql`
+    
+  query {
+      allContentfulWorkPage {
+        edges {
+          node {
+            workIntroText
+            pageTitle
+          }
+        }
+      }
+    }
+  `)
+
 
   return (
 
@@ -29,7 +44,11 @@ const WorkPage = () => {
     <Layout>
       <Seo title="Work" />
       <section className={workStyles.aboutHeader}>
-          <h1 className={workStyles.h1}>Work</h1>
+        {data.allContentfulWorkPage.edges.map((edge) => {
+          return (
+            <h1 className={workStyles.h1}>{edge.node.pageTitle}</h1>
+          )
+        })}
           <a href="#gallery">
             <div class={workStyles.arrow}>
                     <span></span>
@@ -40,9 +59,13 @@ const WorkPage = () => {
         </a>
       </section>
       <section className={workStyles.workWriteupSection} id="gallery">
-        <div className={workStyles.wrapper}>
-          <p className={workStyles.workWriteup}>Cabinetry & Woodworking below - it's all really great and I just really want you to like it, ok? Check out my <a href="https://www.instagram.com/ottawacustomfurniture/" target="_blank" rel="noreferrer noopener">instagram</a> for more commissions.</p>
-        </div>
+      <div className={workStyles.wrapper}>
+        {data.allContentfulWorkPage.edges.map((edge) => {
+          return(
+            <p className={workStyles.workWriteup}>{edge.node.workIntroText}</p>
+          )
+        })}
+      </div>
       </section>
       <section className={workStyles.gallerySection}>
         <div className={workStyles.wrapper}>

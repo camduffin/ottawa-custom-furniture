@@ -18,6 +18,7 @@
     "gatsby-plugin-sass": "^4.5.0",
     "gatsby-plugin-sharp": "^3.4.1",
     "gatsby-plugin-transition-link": "^1.20.5",
+    "gatsby-source-contentful": "^7.2.0",
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "gbimage-bridge": "^0.1.4",
@@ -30,6 +31,7 @@
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "prettier": "2.2.1"
   },
   "keywords": [
@@ -38,7 +40,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
