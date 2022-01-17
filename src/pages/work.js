@@ -24,18 +24,18 @@ const WorkPage = () => {
   const tallBench = '../images/tall-bench2.jpg';
 
   const data = useStaticQuery(graphql`
-    
+
   query {
-      allContentfulWorkPage {
-        edges {
-          node {
-            workIntroText
-            pageTitle
-          }
+    allContentfulWork {
+      edges {
+        node {
+          title
+          workIntro
         }
       }
     }
-  `)
+  }
+`)
 
 
   return (
@@ -44,9 +44,9 @@ const WorkPage = () => {
     <Layout>
       <Seo title="Work" />
       <section className={workStyles.aboutHeader}>
-        {data.allContentfulWorkPage.edges.map((edge) => {
+        {data.allContentfulWork.edges.map((edge) => {
           return (
-            <h1 className={workStyles.h1}>{edge.node.pageTitle}</h1>
+            <h1 className={workStyles.h1}>{edge.node.title}</h1>
           )
         })}
           <a href="#gallery">
@@ -60,9 +60,9 @@ const WorkPage = () => {
       </section>
       <section className={workStyles.workWriteupSection} id="gallery">
       <div className={workStyles.wrapper}>
-        {data.allContentfulWorkPage.edges.map((edge) => {
+        {data.allContentfulWork.edges.map((edge) => {
           return(
-            <p className={workStyles.workWriteup}>{edge.node.workIntroText}</p>
+            <p className={workStyles.workWriteup}>{edge.node.workIntro}</p>
           )
         })}
       </div>
