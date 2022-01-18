@@ -1,7 +1,24 @@
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
+// const FaqDataContentful = () => {
 
+//     const data = useStaticQuery(graphql`
+    
+//     query {
+//         allContentfulFaqBox {
+//             edges {
+//                 node {
+//                     question
+//                     answer {
+//                         answer
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     `)
+// }
 
 export const FaqData = [
 
@@ -23,6 +40,7 @@ export const FaqData = [
     }
 
 ];
+
 
 // https://www.youtube.com/watch?v=fNKbo0bboyA
 

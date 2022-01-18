@@ -4,6 +4,7 @@ import Seo from "../components/Seo"
 import * as aboutStyles from '../components/about.module.scss'
 import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const AboutPage = () => {
 
@@ -25,6 +26,7 @@ const AboutPage = () => {
                     }
                 }
             }
+            
         }
     `)
 

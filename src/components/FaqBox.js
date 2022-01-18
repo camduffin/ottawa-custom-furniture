@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaqData } from './FaqData'; 
+// import { FaqData } from './FaqData'; 
+import { graphql, useStaticQuery } from "gatsby"
 import * as faqStyles from '../components/faq.module.scss';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 
@@ -15,6 +16,51 @@ const FaqBox = () => {
 
         setClicked(index);
     }
+
+    const data = useStaticQuery(graphql`
+    
+    query {
+        allContentfulFaqBox {
+            edges {
+                node {
+                    question
+                    answer {
+                        answer
+                    }
+                }
+            }
+        }
+    }
+    `)
+    
+    const FaqData = [
+
+        {
+            question: `Is the sky blue?`,
+            answer: `No`
+        },
+        {
+            question: `What's wrong with the world today?`,
+            answer: `Everything`
+        },
+        {
+            question: `But, why though?`,
+            answer: `Because, it's not that big of a deal though really.`
+        },
+        {
+            question: `Is the sky blue?`,
+            answer: `Yeah, IDK maybe.`
+        },
+        {
+            question: `Is the sky blue?`,
+            answer: `Yeah, IDK maybe.`
+        },
+        {
+            question: `Is the sky blue?`,
+            answer: `Yeah, IDK maybe.`
+        }
+    
+    ];
 
     return (
         <>
