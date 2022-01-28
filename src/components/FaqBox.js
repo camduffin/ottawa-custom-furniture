@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaqData } from './FaqData'; 
 import { graphql, useStaticQuery } from "gatsby"
 import * as faqStyles from '../components/faq.module.scss';
 import { FiPlus, FiMinus } from 'react-icons/fi';
@@ -17,10 +16,12 @@ const FaqBox = () => {
         setClicked(index);
     }
 
+    // need to change the allContentfulFaqBoxOne to another name somehow, it's fucking up hard.
+
     const data = useStaticQuery(graphql`
     
     query {
-        allContentfulFaqBox {
+        allContentfulFaqBoxTwo {
             edges {
                 node {
                     question
@@ -30,7 +31,7 @@ const FaqBox = () => {
                 }
             }
         }
-        allContentfulFaqBoxTwo {
+        allContentfulFaqBox {
             edges {
                 node {
                     question
