@@ -4,11 +4,18 @@
 // Main Styles
 
 body {
-    background-color: $white;
+    background-color: $lightpink;
 }
 
 ul {
     padding: 0;
+}
+
+.button-header {
+    width: 14%;
+    @include button(4rem);
+    color: $blue;
+    height: 75%;
 }
 
 .scroll-top {
@@ -21,7 +28,8 @@ ul {
     cursor: pointer;
     animation: fadeIn 1s;
     transition: opacity 0.4s;
-    opacity: 0.5;
+    opacity: 0.6;
+    color: $blue;
 }
 
 .scroll-top:hover{
@@ -55,10 +63,9 @@ ul {
 }
 
 .headerBG {
-    height: 100vh;
-    background-image: url(../images/wooden-bg-two.jpg);
+    height: 79vh;
+    background-image: url(../images/conferenceTwo.jpg);
     width: 100%;
-    // background-color: $black;
     background-size: cover;
     background-attachment: fixed;
     background-position: 10% 100%;
@@ -77,112 +84,161 @@ ul {
 
 }
 
-.h1 {
-    @include mainheader(6rem);
-    color: $offwhite;
-    font-weight: 300;
-    width: 50%;
-}
-
 .logo {
-    padding: 1%;
-    transition: all .2s ease-in-out;
+    width: 100%;
+    display: flex;
 }
 
-.logo-text {
-    width: 5%;
+
+.line {
+    border: 0.5px solid $blue;
+    width: 100%;
 }
 
 .header-container {
     display: flex;
-    height: 10vh;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10% 0 10%;
+    flex-wrap: nowrap;
+    padding: 20px;
 }
 
 .header {
     width: 100%;
-    position: fixed;
-    height: 11%;
+    height: 21vh;
     z-index: 100000;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: flex-start;
     transition: top 0.6s;
     margin: 0;
-    background-color: $darkopaque;
-}
+    background-color: $lightpink;
 
-.svg {
-    opacity: .7;
-    transition: all .1s ease-in-out;
-    margin-left: 50px;
-    color: $white;
+    h2 {
+        @include mainheader(3rem);
+        font-weight: 400;
+        width: 100%;
+        color: $blue;
+        padding: 20px 0 15px 0;
+        margin: 0;
+    }
 
-    &:hover,
-    &:focus {
-        opacity: 1;
-        transform: scale(1.03);
+    .right-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    
+        .social-container {
+            padding: 18px 0 0 0;
+            display: flex;
+
+            a {
+                @include paragraphpoppins(1.3rem);
+                color: $blue;
+                padding: 10px;
+                transition: all .5s;
+
+                &:hover,
+                &:focus {
+                    color: $lightbrown;
+                }
+            }
+
+            .header-insta {
+                font-size: 2.3rem;
+                position: relative;
+                bottom: 5px;
+                transition: all .5s;
+
+                &:hover,
+                &:focus {
+                    color: $lightbrown;
+                    transform: scale(1.5);
+                }
+            }
+        }
+    
     }
 }
 
-.arrow {
-    position: absolute;
-    left: 90%;
-    bottom: 58%;
-    transform: translate(-50%,-50%);
-    font-size: 0;
-}
 
-.arrow span {
-    display: block;
-    width: 23px;
-    height: 23px;
-    border-bottom: 2px solid $white;
-    border-right: 2px solid $white;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2.4s infinite;
-}
-.arrow span:nth-child(2){
-    animation-delay: -0.2s;
-}
-.arrow span:nth-child(3){
-    animation-delay: -0.4s;
-}
+// .svg {
+//     opacity: .7;
+//     transition: all .1s ease-in-out;
+//     margin-left: 50px;
+//     color: $white;
 
-@keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
-}
+//     &:hover,
+//     &:focus {
+//         opacity: 1;
+//         transform: scale(1.03);
+//     }
+// }
+
+// .arrow {
+//     position: absolute;
+//     left: 90%;
+//     bottom: 58%;
+//     transform: translate(-50%,-50%);
+//     font-size: 0;
+// }
+
+// .arrow span {
+//     display: block;
+//     width: 23px;
+//     height: 23px;
+//     border-bottom: 2px solid $white;
+//     border-right: 2px solid $white;
+//     transform: rotate(45deg);
+//     margin: -10px;
+//     animation: animate 2.4s infinite;
+// }
+// .arrow span:nth-child(2){
+//     animation-delay: -0.2s;
+// }
+// .arrow span:nth-child(3){
+//     animation-delay: -0.4s;
+// }
+
+// @keyframes animate {
+//     0%{
+//         opacity: 0;
+//         transform: rotate(45deg) translate(-20px,-20px);
+//     }
+//     50%{
+//         opacity: 1;
+//     }
+//     100%{
+//         opacity: 0;
+//         transform: rotate(45deg) translate(20px,20px);
+//     }
+// }
 
 // Nav Bar
 
 .nav-container {
-    width: 100%;
+    width: 30%;
+    padding: 10px;
 }
 
 .nav {
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    padding-top: 25px;
-    width: 95%;
-    padding-left: 50%;
+    flex-wrap: nowrap;
+    
 
     a {
-        @include nav(1.3rem);
-        color: $offwhite;
-        text-transform: uppercase;
+        @include nav(1.5rem);
+        color: $blue;
+        text-transform: capitalize;
+        font-weight: 300;
         cursor: pointer;
         transition: all .13s ease-in-out;
+        flex-wrap: nowrap;
+        // padding-right: 20%;
 
         &:hover,
         &:focus {
@@ -191,9 +247,58 @@ ul {
     }
 
     .active {
-        color: $grey;
+        color: $lightbrown;
     }
 }
+
+// home bio styles
+
+.bio-container {
+
+    width: auto;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding-left: 10%;
+    }
+
+    h1 {
+        @include mainheader(4rem);
+        font-weight: 500;
+        width: 100%;
+        font-family: $poppins;
+        color: $blue;
+    }
+
+    .bio-text {
+        @include paragraphpoppins(1.5rem);
+        color: $blue;
+        word-spacing: 5px;
+        line-height: 25px;
+    }
+
+    .button {
+        width: 20%;
+        margin: 5% 0;
+        @include button(1rem);
+        color: $blue;
+    }
+
+    .bio-image {
+        max-width: 1000px;
+        padding: 50px 50px;
+        margin: 0 auto;
+    }
+}
+
+
+
+// footer styles
 
 .footer {
     margin: 0 auto;
@@ -204,7 +309,7 @@ ul {
     .footer-para {
         @include header(1.3rem);
         letter-spacing: .3rem;
-        color: $black;
+        color: $blue;
     }
 }
 
@@ -221,7 +326,7 @@ ul {
 }
 
 .social-link {
-    color: $black;
+    color: $blue;
     font-size: 3rem;
     transition: all .2s ease-in-out;
     cursor: pointer;
@@ -235,4 +340,17 @@ ul {
 }
 
 
+.social-link-header {
 
+    color: $blue;
+    font-size: 5rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+
+    &:hover,
+    &:focus {
+        color: $lightbrown;
+        transform: scale(1.1);
+    }
+}

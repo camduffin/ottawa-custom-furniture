@@ -1,0 +1,80 @@
+@import '../styles/partials/variables';
+@import '../styles/partials/setup';
+
+.enter {
+    width: 100%;
+    margin: 0 auto;
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        h2 {
+            margin: 0 auto;
+            display: block;
+            padding-bottom: 15px;
+            padding-top: 140px;
+            @include header(3rem);
+            font-weight: 400;
+            color: $blue;
+            font-weight: 300;
+        }
+
+    }
+
+    .form {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        input[type="text"], input[type="email"], textarea {
+            padding: 10px;
+            margin: 20px 0;
+            border: none;
+            border-bottom: 2px solid $offwhite;
+            border-left: 2px solid $offwhite;
+            border-radius: 1px;
+            width: 100%;
+            @include paragraphpoppins(1.5rem);
+            color: $black;
+            background-color: $offwhite;
+        }
+
+        input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+            color: $blue;
+            opacity: .8;
+        }
+
+
+        input[type="email"] {
+            margin: 0 0 20px 0;
+        }
+
+        label {
+            display: none;
+        }
+
+        textarea {
+            height: 300px;
+            resize: none;
+            margin: 2% 0;
+        }
+
+        .button {
+            width: 25%;
+            @include button(1.5rem);
+            color: $blue;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+    }
+}
+
+
+
+// a, p {
+//     @include paragraphpoppins(2rem);
+//     padding: 20px 0;
+// }

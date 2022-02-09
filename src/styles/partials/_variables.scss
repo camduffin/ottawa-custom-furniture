@@ -5,10 +5,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 
 $opensans: 'Open Sans', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $michroma: 'Michroma', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+
+// new colors from murray
+
+$lightpink: #FDEFE2;
+$blue: #2D2F83;
+// $lightpink: rgba(253, 239, 226, 0.7);
 
 
 // colors
@@ -34,17 +44,17 @@ $darkopaque: rgba(34, 34, 34, 0.5);
 
 @mixin header($sizeValue) {
     font-size: $sizeValue;
-    font-family: $michroma;
+    font-family: $poppins;
 }
 
 @mixin nav($sizeValue) {
     font-size: $sizeValue;
-    font-family: $michroma;
+    font-family: $poppins;
 }
 
 @mixin paragraph($sizeValue) {
     font-size: $sizeValue;
-    font-family: $michroma;
+    font-family: $poppins;
     letter-spacing: .1rem;
     color: $block;
 }
@@ -64,18 +74,18 @@ $darkopaque: rgba(34, 34, 34, 0.5);
 @mixin button($sizeValue) {
         padding: 10px;
         background: none;
-        border: 2px solid $brown;
+        border: 2px solid $blue;
         border-radius: 2px;
         transition: all .2s ease-in-out;
         cursor: pointer;
 
-        @include paragraphpoppins(1.5rem);
+        @include paragraphpoppins(1.3rem);
 
         &:hover,
         &:focus {
-            background-color: $brown;
+            background-color: $blue;
             color: $offwhite;
-            transform: scale(.96);
+            transform: scale(.98);
         }
 
         &:active {

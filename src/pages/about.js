@@ -32,7 +32,7 @@ const AboutPage = () => {
 
     return (
         <Layout>
-            <Seo title="About" />
+            <Seo title="The Story" />
             <section className={aboutStyles.aboutSection}>
                 <div className={aboutStyles.wrapper}>
                     <div className={aboutStyles.aboutHeader}>

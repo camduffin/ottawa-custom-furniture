@@ -11,17 +11,20 @@ const NavBar = () => {
                 <li>
                     <AniLink activeClassName={navStyles.active} fade to="/" >Home</AniLink>
                 </li>
-                <li>
+                {/* <li>
                     <AniLink activeClassName={navStyles.active} fade to="/work">Work</AniLink>
-                </li>
+                </li> */}
                 <li>
-                    <AniLink activeClassName={navStyles.active} fade to="/about" duration={1}>About</AniLink>
+                    <AniLink activeClassName={navStyles.active} fade to="/about" duration={1}>The Story</AniLink>
                 </li>
-                <li>
+                {/* <li>
                     <AniLink activeClassName={navStyles.active} fade to="/faq" duration={1}>FAQ</AniLink>
-                </li>
+                </li> */}
                 <li>
                     <Link to="/#contact">Contact</Link>
+                </li>
+                <li>
+                    <Link to="/quote">Get a Quote</Link>
                 </li>
             </ul>
         </nav>

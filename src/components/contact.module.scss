@@ -29,6 +29,12 @@
             background-color: $offwhite;
         }
 
+        input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+            color: $blue;
+            opacity: .8;
+        }
+
+
         input[type="email"] {
             margin: 0 0 20px 0;
         }
@@ -47,6 +53,7 @@
             width: 35%;
             margin: 5% 0;
             @include button(1rem);
+            color: $blue;
         }
     }
 }

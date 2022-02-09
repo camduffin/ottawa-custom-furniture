@@ -3,6 +3,7 @@ import * as homeStyles from '../components/home.module.scss'
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Contact from '../components/Contact'
+import HomeBio from '../components/HomeBio'
 
 
 const IndexPage = () => {
@@ -14,18 +15,18 @@ const IndexPage = () => {
           <section className={homeStyles.headerBG}>
             <div className={homeStyles.wrapper}>
               <div className={homeStyles.mainHeader}>
-                <h1 className={homeStyles.h1}>Thoughtfully designed, beautiful & functional.</h1>
                 <a href="#contact">
-                  <div class={homeStyles.arrow}>
+                  {/* <div class={homeStyles.arrow}>
                     <span></span>
                     <span></span>
                     <span></span>
                     down arrow
-                  </div>
+                  </div> */}
               </a>
               </div>
             </div>
           </section>
+          <HomeBio />
           <Contact />
         </Layout>
   )

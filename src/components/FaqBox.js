@@ -18,59 +18,59 @@ const FaqBox = () => {
 
     // need to change the allContentfulFaqBoxOne to another name somehow, it's fucking up hard.
 
-    const data = useStaticQuery(graphql`
+    // const data = useStaticQuery(graphql`
     
-    query {
-        allContentfulFaqBoxTwo {
-            edges {
-                node {
-                    question
-                    answer {
-                        answer
-                    }
-                }
-            }
-        }
-        allContentfulFaqBox {
-            edges {
-                node {
-                    question
-                    answer {
-                        answer
-                    }
-                }
-            }
-        }
-    }
-    `)
+    // query {
+    //     allContentfulFaqBoxTwo {
+    //         edges {
+    //             node {
+    //                 question
+    //                 answer {
+    //                     answer
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     allContentfulFaqBox {
+    //         edges {
+    //             node {
+    //                 question
+    //                 answer {
+    //                     answer
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // `)
 
     // Faq data from Contentful
 
-    const questionOne = data.allContentfulFaqBox.edges.map((edge) => edge.node.question) 
-    const answerOne = data.allContentfulFaqBox.edges.map((edge) => edge.node.answer.answer)
-    const questionTwo = data.allContentfulFaqBoxTwo.edges.map((edge) => edge.node.question) 
-    const answerTwo = data.allContentfulFaqBoxTwo.edges.map((edge) => edge.node.answer.answer)
+    // const questionOne = data.allContentfulFaqBox.edges.map((edge) => edge.node.question) 
+    // const answerOne = data.allContentfulFaqBox.edges.map((edge) => edge.node.answer.answer)
+    // const questionTwo = data.allContentfulFaqBoxTwo.edges.map((edge) => edge.node.question) 
+    // const answerTwo = data.allContentfulFaqBoxTwo.edges.map((edge) => edge.node.answer.answer)
 
     
-    const FaqData = [
+    // const FaqData = [
         
-        {
-            question: questionOne,
-            answer: answerOne
-        },
-        {
-            question: questionTwo,
-            answer: answerTwo
-        },
+    //     {
+    //         question: questionOne,
+    //         answer: answerOne
+    //     },
+    //     {
+    //         question: questionTwo,
+    //         answer: answerTwo
+    //     },
         
         
-    ];
+    // ];
 
     
 
     return (
         <>
-            {FaqData.map((item, index) => {
+            {/* {FaqData.map((item, index) => {
 
                 return (
                     <div>
@@ -89,7 +89,7 @@ const FaqBox = () => {
                         </li>
                     </div>
                 )
-            } )}
+            } )} */}
         </>
     )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import * as contactStyles from './contact.module.scss'
-import ContactForm from '../components/ContactForm'
 
 const Contact = () => {
     return (
@@ -21,9 +20,6 @@ const Contact = () => {
                                 <p>Earth, Earth, Earth</p>
                             </li>
                         </ul>
-                    </div>
-                    <div>
-                        <ContactForm />
                     </div>
                 </div>
             </div>
