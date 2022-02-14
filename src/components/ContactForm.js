@@ -30,8 +30,8 @@ function ContactForm() {
         //     </button>
         // </form>
 
-        <form name="quote" method="POST" data-netlify="true" className={quoteStyles.form}>
-            <input type="hidden" name="quote" value="Contact Form" />
+        <form name="Quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" className={quoteStyles.form}>
+            <input type="hidden" name="form-name" value="Quote" />
             <label htmlFor="first-name" className="sr-only">name</label>
             <input type="text" id="first-name" name="first-name" placeholder="First Name" required/>
 
