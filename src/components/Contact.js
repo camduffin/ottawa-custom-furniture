@@ -2,6 +2,8 @@ import React from 'react'
 import * as contactStyles from './contact.module.scss'
 import { FiInstagram } from 'react-icons/fi'
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { Parallax } from 'react-parallax';
+import image from '../images/bed.jpg'
 
 const Contact = () => {
 
@@ -32,7 +34,11 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className={contactStyles.bottomImage}></div>
+            <Parallax className={contactStyles.bottomImage} 
+        bgImage={image} strength={400} 
+        bgImageAlt="A wooden bed in a bedroom  with a dark wooden headboard"
+        ></Parallax>
+            {/* <div className={contactStyles.bottomImage}></div> */}
         </section>
     )
 }
