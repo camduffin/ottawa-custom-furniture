@@ -1,11 +1,9 @@
 import * as React from "react"
 import * as headerStyles from './home.module.scss'
-import Social from './Social'
-import { StaticImage } from 'gatsby-plugin-image';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import NavBar from './NavBar'
 import { FiInstagram } from 'react-icons/fi'
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 
 const Header = ({ siteTitle }) => {
 
@@ -53,7 +51,9 @@ const Header = ({ siteTitle }) => {
             
             <div className={headerStyles.logo}>
                 <h2>Ottawa Custom Furniture</h2>
-                <button className={headerStyles.buttonHeader}>Work Together</button>
+                <AniLink to="/quote">
+                  <button className={headerStyles.buttonHeader}>Work Together</button>
+                </AniLink>
             </div>
 
             <div className={headerStyles.line}></div>
