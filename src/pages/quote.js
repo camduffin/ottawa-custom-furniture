@@ -8,7 +8,7 @@ const quotePage = () => {
 
     return (
         <Layout>
-        <Seo title="Get a Quote"/>
+            <Seo title="Get a Quote"/>
             <section className={quoteStyles.enter} id="quote">
                 <div className={quoteStyles.wrapper}>
                     <div className={quoteStyles.contactContainer}>

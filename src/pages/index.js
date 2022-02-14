@@ -5,7 +5,7 @@ import Seo from "../components/Seo"
 import Contact from '../components/Contact'
 import HomeBio from '../components/HomeBio'
 import image from '../images/conferenceTwo.jpg'
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
 
 const IndexPage = () => {
