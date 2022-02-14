@@ -1,5 +1,7 @@
 import React from 'react'
 import * as contactStyles from './contact.module.scss'
+import { FiInstagram } from 'react-icons/fi'
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const Contact = () => {
 
@@ -14,14 +16,18 @@ const Contact = () => {
                         <h2>Contact</h2>
                         <ul className={contactStyles.contactList}>
                             <li>
-                                <p>123 I Gotta Piece'a Wood Right Here Cres.</p>
+                                <a href="https://www.instagram.com/ottawacustomfurniture/" target="_blank" rel="noreferrer noopener">
+                                    Instagram <FiInstagram className={contactStyles.socialLink} />
+                                </a>
                             </li>
                             <li>
                                 <a href="mailto:contact@ottawacustomfurniture.ca" target="_blank" rel="noreferrer noopener">contact@ottawacustomfurniture.ca</a>
                             </li>
-                            {/* <li>
-                                <p>phone</p>
-                            </li> */}
+                            <li>
+                                <AniLink to="/quote">
+                                    <button>Get a Quote</button>
+                                </AniLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
