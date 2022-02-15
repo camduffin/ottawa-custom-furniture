@@ -77,7 +77,6 @@ const AboutPage = () => {
                             loading="lazy"
                             placeholder="blurred"
                             width={1000}
-                                
                             />
                         </div>
             </section>

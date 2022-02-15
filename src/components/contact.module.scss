@@ -30,17 +30,26 @@
     align-items: center;
     padding-bottom: 10%;
 
+
     h2 {
-        
         @include header(4rem);
         color: $blue;
         font-weight: 300;
     }
 
+   
+
     li {
         margin: 0;
         padding: 0;
         list-style-type: none;
+
+        @include phoneMQ {
+
+            a {
+                font-size: 1.4rem;
+            }
+        }
     }
 
     .contact-list {
@@ -48,6 +57,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         
         li {
             padding: 10px;

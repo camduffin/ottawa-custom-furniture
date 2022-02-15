@@ -16,6 +16,11 @@ ul {
     @include button(4rem);
     color: $blue;
     height: 75%;
+
+    @include phoneMQ {
+        width: 140px;
+        height: 50px;
+    }
 }
 
 .scroll-top {
@@ -127,6 +132,10 @@ ul {
                 &:focus {
                     color: $lightbrown;
                 }
+
+                @include tabletMQ {
+                    display: none;
+                }
             }
 
             .header-insta {
@@ -230,7 +239,7 @@ ul {
         transition: all .13s ease-in-out;
         flex-wrap: nowrap;
         display: block;
-        // padding-right: 20%;
+    
 
         &:hover,
         &:focus {
@@ -240,6 +249,8 @@ ul {
 
     .active {
         color: $lightbrown;
+
+
     }
 }
 
@@ -253,11 +264,18 @@ ul {
     flex-direction: column;
     margin: 0 auto;
 
+
     .inner-container {
         display: flex;
         flex-direction: column;
         width: 70%;
         padding-left: 10%;
+
+        @include tabletMQ {
+            width: 100%;
+        }
+
+        
     }
 
     h1 {
@@ -281,6 +299,10 @@ ul {
         margin: 5% 0;
         @include button(1rem);
         color: $blue;
+
+        @include phoneMQ {
+            width: 50%;
+        }
     }
 
     .bio-image {
@@ -313,6 +335,10 @@ ul {
     justify-content: center;
     align-items: center;
     padding-top: 3%;
+
+    @include phoneMQ {
+        padding-top: 20%;
+    }
 
     li {
         padding: 1%;
