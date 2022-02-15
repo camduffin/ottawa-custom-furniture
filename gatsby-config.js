@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Ottawa Custom Furniture`,
     description: `Custom furniture designed and built by Murray Spencer in Ottawa, Canada.`,
+    keywords: `furniture, ottawa furniture, custom furniture, murray spencer, ottawa custom furniture, nepean furniture, cabinet, ottawa cabinet, ottawa cabinetry`,
+    image: `/conferenceThree.jpg`,
     author: `@camduffin`,
   },
   plugins: [
