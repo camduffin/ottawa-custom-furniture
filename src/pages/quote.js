@@ -3,8 +3,23 @@ import * as quoteStyles from '../components/quote.module.scss'
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import ContactForm from "../components/ContactForm";
+import { graphql, useStaticQuery } from "gatsby";
 
-const quotePage = () => {
+const QuotePage = () => {
+
+    const data = useStaticQuery(graphql`
+
+    query {
+        allContentfulGetAQuote {
+            edges {
+                node {
+                    title
+                }
+            }
+        }
+        
+    }
+`)
 
     return (
         <Layout>
@@ -12,9 +27,12 @@ const quotePage = () => {
             <section className={quoteStyles.enter} id="quote">
                 <div className={quoteStyles.wrapper}>
                     <div className={quoteStyles.contactContainer}>
-                        {/* <div className={quoteStyles.contactInfo}> */}
-                            <h2>Get a Quote</h2>
-                        {/* </div> */}
+                        {data.allContentfulGetAQuote.edges.map((edge) => {
+                                return (
+                                    <h2>{edge.node.title}</h2>
+                                )
+                        })}
+                
                         <div>
                             <ContactForm />
                         </div>
@@ -25,4 +43,4 @@ const quotePage = () => {
     )
 }
 
-export default quotePage;
+export default QuotePage;
