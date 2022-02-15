@@ -13,6 +13,7 @@ function Seo({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
@@ -22,12 +23,9 @@ function Seo({ description, lang, meta, title }) {
   const metaDescription = site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   const defaultImage = site.siteMetadata.image
+  const siteUrl = site.siteMetadata.siteUrl
 
   const { pathname } = useLocation();
-
-  const {
-    siteUrl,
-} = site.siteMetadata;
 
     const seo = {
         title: title || defaultTitle,
