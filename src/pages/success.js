@@ -26,7 +26,7 @@ const SuccessPage = () => {
                 <div className={quoteStyles.wrapper}>
                     <section className={quoteStyles.successSection}>
 
-                        {data.allContentfulGetAQuote.edges.map((edge) => {
+                        {data.allContentfulQuoteSuccessPage.edges.map((edge) => {
                             return (
                                 <h2>{edge.node.thankYouMessage}</h2>
                             )
