@@ -73,7 +73,6 @@ ul {
     display: flex;
 }
 
-
 .line {
     border: 0.5px solid $blue;
     width: 100%;
@@ -205,6 +204,14 @@ ul {
 .nav-container {
     width: 30%;
     padding: 10px;
+
+    @include bigTabletMQ {
+        width: 40%;
+    }
+
+    @include tabletMQ {
+        display: none;
+    }
 }
 
 .nav {
@@ -222,6 +229,7 @@ ul {
         cursor: pointer;
         transition: all .13s ease-in-out;
         flex-wrap: nowrap;
+        display: block;
         // padding-right: 20%;
 
         &:hover,

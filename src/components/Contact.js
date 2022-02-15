@@ -7,8 +7,6 @@ import image from '../images/bed.jpg'
 
 const Contact = () => {
 
-
-
     return (
 
         <section className={contactStyles.enter} id="contact">
@@ -35,10 +33,10 @@ const Contact = () => {
                 </div>
             </div>
             <Parallax className={contactStyles.bottomImage} 
-        bgImage={image} strength={400} 
-        bgImageAlt="A wooden bed in a bedroom  with a dark wooden headboard"
-        ></Parallax>
-            {/* <div className={contactStyles.bottomImage}></div> */}
+            bgImage={image} strength={400} 
+            bgImageAlt="A wooden bed in a bedroom  with a dark wooden headboard"
+            >
+            </Parallax>
         </section>
     )
 }
