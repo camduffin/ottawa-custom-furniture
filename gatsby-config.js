@@ -44,5 +44,6 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-smoothscroll`,
   ],
 }

@@ -68,7 +68,7 @@ ul {
 }
 
 .para-header {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-position: 25% 75%;
 }
@@ -98,6 +98,7 @@ ul {
     height: 21vh;
     z-index: 100000;
     display: flex;
+    position: fixed;
     flex-wrap: nowrap;
     justify-content: flex-start;
     transition: top 0.6s;
@@ -226,7 +227,7 @@ ul {
 .nav {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     
 
@@ -239,6 +240,7 @@ ul {
         transition: all .13s ease-in-out;
         flex-wrap: nowrap;
         display: block;
+        padding-right: 40px;
     
 
         &:hover,
@@ -259,7 +261,7 @@ ul {
 .bio-container {
 
     width: 78%;
-    padding: 5% 0;
+    padding: 20% 0 15% 0;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -307,12 +309,10 @@ ul {
 
     .bio-image {
         max-width: 1000px;
-        padding: 50px 50px;
+        padding-top: 20%;
         margin: 0 auto;
     }
 }
-
-
 
 // footer styles
 

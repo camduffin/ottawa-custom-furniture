@@ -1,7 +1,7 @@
 import React from 'react'
 import * as navStyles from './home.module.scss'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { Link } from 'gatsby'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const NavBar = () => {
 
@@ -9,22 +9,10 @@ const NavBar = () => {
         <nav className={navStyles.navContainer}>
             <ul className={navStyles.nav}>
                 <li>
-                    <AniLink activeClassName={navStyles.active} fade to="/" >Home</AniLink>
-                </li>
-                {/* <li>
-                    <AniLink activeClassName={navStyles.active} fade to="/work">Work</AniLink>
-                </li> */}
-                <li>
-                    <AniLink activeClassName={navStyles.active} fade to="/about" duration={1}>The Story</AniLink>
-                </li>
-                {/* <li>
-                    <AniLink activeClassName={navStyles.active} fade to="/faq" duration={1}>FAQ</AniLink>
-                </li> */}
-                <li>
-                    <Link to="/#contact">Contact</Link>
+                    <Link to="#home-bio">Our Ethos</Link>
                 </li>
                 <li>
-                    <Link to="/quote">Get a Quote</Link>
+                    <Link to="/#contact">Work Together</Link>
                 </li>
             </ul>
         </nav>

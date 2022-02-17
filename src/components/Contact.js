@@ -1,9 +1,6 @@
 import React from 'react'
-import * as contactStyles from './contact.module.scss'
-import { FiInstagram } from 'react-icons/fi'
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import { Parallax } from 'react-parallax';
-import image from '../images/bed.jpg'
+import * as contactStyles from './contact.module.scss';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
 
@@ -14,7 +11,8 @@ const Contact = () => {
                 <div className={contactStyles.contactContainer}>
                     <div className={contactStyles.contactInfo}>
                         <h2>Contact</h2>
-                        <ul className={contactStyles.contactList}>
+                        <ContactForm />
+                        {/* <ul className={contactStyles.contactList}>
                             <li>
                                 <a href="https://www.instagram.com/ottawacustomfurniture/" target="_blank" rel="noreferrer noopener">
                                     Instagram <FiInstagram className={contactStyles.socialLink} />
@@ -28,15 +26,10 @@ const Contact = () => {
                                     <button>Get a Quote</button>
                                 </AniLink>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </div>
-            <Parallax className={contactStyles.bottomImage} 
-            bgImage={image} strength={400} 
-            bgImageAlt="A wooden bed in a bedroom  with a dark wooden headboard"
-            >
-            </Parallax>
         </section>
     )
 }

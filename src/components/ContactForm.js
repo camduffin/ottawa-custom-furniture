@@ -1,5 +1,5 @@
 import React from "react";
-import * as quoteStyles from './quote.module.scss'
+import * as contactStyles from './contact.module.scss'
 import { graphql, useStaticQuery } from "gatsby";
 
 function ContactForm() {
@@ -21,7 +21,7 @@ function ContactForm() {
 
     return (
 
-        <form name="Quote" action="/success" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" className={quoteStyles.form}>
+        <form name="Quote" action="/success" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" className={contactStyles.form}>
             <input type="hidden" name="form-name" value="Quote" />
             <label htmlFor="name" className="sr-only">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" required/>
@@ -40,7 +40,7 @@ function ContactForm() {
             })}
 
 
-            <button type="submit" className={quoteStyles.button}>Submit</button>
+            <button type="submit" className={contactStyles.button}>Submit</button>
         </form>
 
     );

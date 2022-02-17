@@ -36,7 +36,7 @@ const HomeBio = () => {
 
     return (
 
-        <section>
+        <section id="home-bio">
             <div className={homeBioStyles.bioContainer}>
                 <div className={homeBioStyles.innerContainer}>
 

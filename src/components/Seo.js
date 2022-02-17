@@ -108,6 +108,12 @@ function Seo({ description, lang, meta, title }) {
             "name": "Ottawa Custom Furniture",
             "image": "/conferenceThree.jpg",
             "logo": "/logo-ottawa.png",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ottawa",
+              "addressRegion": "ON",
+              "addressCountry": "CA"
+          },
             "email": "mailto:contact@ottawacustomfurniture.ca",
             "description": "Custom furniture designed and built by Murray Spencer in Ottawa, Canada.",
             "sameAs": ["https://www.instagram.com/ottawacustomfurniture/"],
