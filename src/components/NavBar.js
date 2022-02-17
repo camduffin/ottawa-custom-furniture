@@ -1,7 +1,6 @@
 import React from 'react'
 import * as navStyles from './home.module.scss'
 import { Link } from 'gatsby'
-import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const NavBar = () => {
 
@@ -9,7 +8,7 @@ const NavBar = () => {
         <nav className={navStyles.navContainer}>
             <ul className={navStyles.nav}>
                 <li>
-                    <Link to="#home-bio">Our Ethos</Link>
+                    <Link to="#ethos">Our Ethos</Link>
                 </li>
                 <li>
                     <Link to="/#contact">Work Together</Link>

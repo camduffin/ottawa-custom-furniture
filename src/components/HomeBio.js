@@ -1,7 +1,7 @@
 import React from 'react'
 import * as homeBioStyles from './home.module.scss'
 import { StaticImage } from 'gatsby-plugin-image';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { Link } from 'gatsby'
 import { graphql, useStaticQuery } from "gatsby";
 
 const HomeBio = () => {
@@ -36,8 +36,8 @@ const HomeBio = () => {
 
     return (
 
-        <section id="home-bio">
-            <div className={homeBioStyles.bioContainer}>
+        <section>
+            <div className={homeBioStyles.bioContainer} id="ethos">
                 <div className={homeBioStyles.innerContainer}>
 
                 {data.allContentfulHome.edges.map((edge) => {
@@ -70,9 +70,9 @@ const HomeBio = () => {
                             )
                     })}
 
-                    <AniLink to="/quote">
+                    <Link to="#contact">
                         <button className={homeBioStyles.button}>Work Together</button>
-                    </AniLink>
+                    </Link>
                 </div>
                 <div className={homeBioStyles.bioImage}>
                     <StaticImage

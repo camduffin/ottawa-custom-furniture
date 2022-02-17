@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as quoteStyles from '../components/quote.module.scss'
+import * as contactStyles from '../components/contact.module.scss'
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
@@ -23,8 +23,8 @@ const SuccessPage = () => {
     return (
             <Layout>
             <Seo title="Success" />
-                <div className={quoteStyles.wrapper}>
-                    <section className={quoteStyles.successSection}>
+                <div className={contactStyles.wrapper}>
+                    <section className={contactStyles.successSection}>
 
                         {data.allContentfulQuoteSuccessPage.edges.map((edge) => {
                             return (

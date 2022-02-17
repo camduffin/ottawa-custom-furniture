@@ -4,8 +4,7 @@
 .enter {
     width: 100%;
     padding-bottom: 10%;
-    margin-top: 0;
-    padding-top: 0;
+    padding-top: 5%;
 
     .contact-container {
         display: flex;
@@ -18,8 +17,6 @@
     }
     
     .contact-info {
-        margin-top: 0;
-        padding-top: 0;
         
         h2 {
             @include header(4rem);
@@ -75,8 +72,6 @@
         }
     }
 }
-
-
 
 .success-section {
     width: 100%;
