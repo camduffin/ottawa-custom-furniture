@@ -1,9 +1,9 @@
 import * as React from "react"
 import * as headerStyles from './home.module.scss'
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import NavBar from './NavBar'
 import { FiInstagram } from 'react-icons/fi'
 import { useState, useEffect } from 'react'
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Header = ({ siteTitle }) => {
 
@@ -43,6 +43,8 @@ const Header = ({ siteTitle }) => {
 
   }, [prevScrollPos, visible, handleScroll]);
 
+  const logo = '../images/logo-ottawa.png'
+
     return (
         
         <header className={headerStyles.header} style={{top: visible ? '0' : '-21vh'}}>
@@ -50,9 +52,15 @@ const Header = ({ siteTitle }) => {
             
             <div className={headerStyles.logo}>
                 <h2>Ottawa Custom Furniture</h2>
-                {/* <AniLink to="/quote">
-                  <button className={headerStyles.buttonHeader}>Work Together</button>
-                </AniLink> */}
+                <div className={headerStyles.logoContainer}>
+                  <StaticImage 
+                  src={logo}
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  alt=""
+                  loading="lazy"
+                  placeholder="blurred"
+                  />
+                </div>
             </div>
 
             <div className={headerStyles.line}></div>

@@ -4,7 +4,7 @@
 // Main Styles
 
 body {
-    background-color: $lightpink;
+    background-color: $newbackground
 }
 
 ul {
@@ -76,12 +76,19 @@ ul {
 .logo {
     width: 100%;
     display: flex;
+
+    .logo-container {
+        width: 40%;
+    }
+
 }
 
 .line {
     border: 0.5px solid $blue;
     width: 100%;
 }
+
+// Header 
 
 .header-container {
     display: flex;
@@ -103,7 +110,7 @@ ul {
     justify-content: flex-start;
     transition: top 0.6s;
     margin: 0;
-    background-color: $lightpink;
+    background-color: $newbackground;
 
     h2 {
         @include mainheader(3rem);
@@ -118,6 +125,7 @@ ul {
         display: flex;
         width: 100%;
         justify-content: space-between;
+
     
         .social-container {
             padding: 18px 0 0 0;
@@ -256,7 +264,7 @@ ul {
     }
 }
 
-// home bio styles
+// Home About Section
 
 .bio-container {
 
@@ -314,7 +322,7 @@ ul {
     }
 }
 
-// footer styles
+// Footer
 
 .footer {
     margin: 0 auto;
@@ -323,7 +331,8 @@ ul {
     padding-top: 1%;
 
     .footer-para {
-        @include header(1.3rem);
+        @include paragraphpoppins(1.3rem);
+        font-weight: 200;
         letter-spacing: .3rem;
         color: $blue;
     }
@@ -359,7 +368,6 @@ ul {
 
 }
 
-
 .social-link-header {
 
     color: $blue;
@@ -372,5 +380,34 @@ ul {
     &:focus {
         color: $lightbrown;
         transform: scale(1.1);
+    }
+}
+
+// 404 Page
+
+.error-section {
+
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        @include header(3rem);
+        font-weight: 200;
+        color: $blue;
+    }
+
+    p {
+        @include paragraphpoppins(2rem);
+        color: $blue;    
+    }
+
+    a {
+        @include button(2rem);
+        color: $blue;
     }
 }
