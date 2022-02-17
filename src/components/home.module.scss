@@ -68,7 +68,7 @@ ul {
 }
 
 .para-header {
-    height: 110vh;
+    height: 80vh;
     width: 100%;
     background-position: 25% 75%;
 }
@@ -105,7 +105,7 @@ ul {
     height: 21vh;
     z-index: 100000;
     display: flex;
-    position: fixed;
+    // position: fixed;
     flex-wrap: nowrap;
     justify-content: flex-start;
     transition: top 0.6s;

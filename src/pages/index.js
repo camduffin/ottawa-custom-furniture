@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Contact from '../components/Contact'
 import HomeBio from '../components/HomeBio'
-import image from '../images/conferenceThree.jpg'
+import headerImage from '../images/conferenceHeader.jpg'
 import { Parallax } from 'react-parallax';
 
 
@@ -15,7 +15,7 @@ const IndexPage = () => {
         <Layout>
           <Seo title="Home" />
             <Parallax className={homeStyles.paraHeader} 
-            bgImage={image} strength={400} 
+            bgImage={headerImage} strength={400} 
             bgImageAlt="A wooden conference room table with blue chairs around it"
             >
             </Parallax>
