@@ -4,7 +4,7 @@ module.exports = {
     description: `Custom furniture designed and built by Murray Spencer in Ottawa, Canada.`,
     siteUrl: `https://ottawa-custom-furniture.netlify.app/`,
     keywords: `furniture, ottawa furniture, custom furniture, murray spencer, ottawa custom furniture, nepean furniture, cabinet, ottawa cabinet, ottawa cabinetry`,
-    image: `/conferenceThree.jpg`,
+    image: `src/images/OCF-logo.png`,
     author: `@camduffin`,
   },
   plugins: [
@@ -39,7 +39,7 @@ module.exports = {
         background_color: `#FDEFE2`,
         theme_color: `#2D2F83`,
         display: `fullscreen`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/transparent-white.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,

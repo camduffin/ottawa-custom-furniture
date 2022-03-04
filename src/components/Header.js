@@ -43,7 +43,7 @@ const Header = ({ siteTitle }) => {
 
   // }, [prevScrollPos, visible, handleScroll]);
 
-  const logo = '../images/logo-ottawa.png'
+  const logo = '../images/crop-logo.png'
 
     return (
         
