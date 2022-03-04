@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from "gatsby";
 
 const HomeBio = () => {
 
-    const bioImage = '../images/coffee-table.jpg'
+    const bioImage = '../images/coffee-table.webp'
 
     const data = useStaticQuery(graphql`
 
@@ -79,8 +79,8 @@ const HomeBio = () => {
                         src={bioImage}
                         formats={["AUTO", "WEBP", "AVIF"]}
                         alt="a coffee table with books and a camera placed on top"
-                        loading="lazy"
                         placeholder="blurred"
+                        loading='lazy'
                     />
                 </div>
             </div>
