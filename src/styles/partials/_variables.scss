@@ -110,7 +110,13 @@ $darkopaque: rgba(34, 34, 34, 0.5);
 }
 
 @mixin phoneMQ{
-    @media (max-width: 657px) {
+    @media (max-width: 700px) {
+    @content;
+    }
+}
+
+@mixin mediumPhoneMQ{
+    @media (max-width: 600px) {
     @content;
     }
 }

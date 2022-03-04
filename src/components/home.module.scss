@@ -71,10 +71,14 @@ ul {
     height: 80vh;
     width: 100%;
 
-    // @include tabletMQ {
-    //     margin-bottom: 0;
-    //     min-width: 200px;
-    // }
+    @include tabletMQ {
+        margin-bottom: 50px;
+        min-width: 200px;
+        height: 30vh;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
 }
 
 .logo {
@@ -88,6 +92,10 @@ ul {
 
         img {
             object-fit: contain;
+
+            @include phoneMQ {
+                display: none;
+            }
         }
     }
 
@@ -96,6 +104,10 @@ ul {
 .line {
     border: 0.5px solid $blue;
     width: 100%;
+
+    @include tabletMQ {
+        display: none;
+    }
 }
 
 // Header 
@@ -115,7 +127,6 @@ ul {
     height: 20vh;
     z-index: 100000;
     display: flex;
-    // position: fixed;
     flex-wrap: nowrap;
     justify-content: flex-start;
     transition: top 0.6s;
@@ -123,8 +134,13 @@ ul {
     background-color: $newbackground;
 
     @include tabletMQ {
-        height: 17vh;
+        height: 14vh;
     }
+
+    @include mediumPhoneMQ {
+        height: 20vh;
+    }
+
 
     h2 {
         @include mainheader(3rem);
