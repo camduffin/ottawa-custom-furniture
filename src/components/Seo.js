@@ -12,6 +12,8 @@ function Seo({ description, lang, image, meta, title }) {
           siteMetadata {
             title
             description
+            siteUrl
+            keywords
             author
             image
           }
@@ -24,15 +26,17 @@ function Seo({ description, lang, image, meta, title }) {
   const defaultTitle = site.siteMetadata?.title
   const defaultImage = site.siteMetadata.image
   const siteUrl = site.siteMetadata.siteUrl
+  const siteKeywords = site.siteMetadata.keywords
 
   const { pathname } = useLocation();
 
     const seo = {
-        title: title || defaultTitle,
+        title: defaultTitle,
         description: metaDescription,
-        image: `${siteUrl}${defaultImage}`,
+        image: defaultImage,
         url: `${siteUrl}${pathname}`,
-        canonical: `${siteUrl}${pathname}`
+        canonical: `${siteUrl}${pathname}`,
+        keywords: siteKeywords
     }
 
   return (
@@ -82,7 +86,7 @@ function Seo({ description, lang, image, meta, title }) {
 
 <link rel="canonical" href={seo.canonical}/>
 
-<meta name="keywords" content="furniture, ottawa furniture, custom furniture, murray spencer, ottawa custom furniture, nepean furniture, cabinet, ottawa cabinet, ottawa cabinetry"/>
+<meta name="keywords" content={seo.keywords}/>
 
 {seo.url && <meta property="og:url" content={seo.url} />}
 
