@@ -29,6 +29,12 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        resolveSiteUrl: () => siteUrl,
+      },
+    },
     `gatsby-plugin-transition-link`,
     `react-icons`,
     `gatsby-plugin-sass`,
