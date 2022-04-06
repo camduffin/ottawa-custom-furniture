@@ -4,7 +4,7 @@ module.exports = {
     description: `Custom furniture designed and built by Murray Spencer in Ottawa, Canada.`,
     siteUrl: `https://www.ottawacustomfurniture.ca/`,
     keywords: `ottawa custom furniture, furniture, ottawa furniture, custom furniture, murray spencer, nepean furniture, cabinet, ottawa cabinet, ottawa cabinetry, handmade furniture ottawa, handmade furniture, ottawa west furniture, woodworking ottawa, ottawa table, ottawa chair, ottawa handmade chair, ottawa handmade table, ottawa handmade desk, ottawa custom table, ottawa custom chair, ottawa custom desk`,
-    image: `/conferenceLogo.jpg`,
+    image: `/conferenceNew.jpg`,
     author: `@camduffin`,
   },
   plugins: [
