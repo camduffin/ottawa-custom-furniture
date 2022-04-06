@@ -106,8 +106,8 @@ function Seo({ description, lang, image, meta, title }) {
             "@type": "LocalBusiness",
             "url": "https://www.ottawacustomfurniture.ca/",
             "name": "Ottawa Custom Furniture",
-            "image": "/conferenceThree.jpg",
-            "logo": "/logo-ottawa.png",
+            "image": "https://www.ottawacustomfurniture.ca/conferenceThree.jpg",
+            "logo": "https://www.ottawacustomfurniture.ca/logo-ottawa.png",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Ottawa",
