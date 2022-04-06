@@ -110,7 +110,7 @@ function Seo({ description, lang, image, meta, title }) {
             "@type": "LocalBusiness",
             "url": "https://www.ottawacustomfurniture.ca/",
             "name": "Ottawa Custom Furniture",
-            "image": "/conferenceThree.jpg",
+            "image": "/conferenceLogo.jpg",
             "logo": "/logo-ottawa.png",
             "address": {
               "@type": "PostalAddress",
