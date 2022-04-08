@@ -2,7 +2,7 @@ import * as React from "react"
 import * as headerStyles from './home.module.scss'
 import NavBar from './NavBar'
 import { FiInstagram } from 'react-icons/fi'
-// import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { StaticImage } from 'gatsby-plugin-image';
 
 const Header = ({ siteTitle }) => {
