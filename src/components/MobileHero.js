@@ -10,6 +10,7 @@ const MobileHero = () => {
     const mobileImage = '../images/conferenceThree.jpg';
 
         return (
+            
 
             <div className={mobileStyles.mobileHero}>
                 <StaticImage 
