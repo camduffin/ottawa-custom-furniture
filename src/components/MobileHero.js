@@ -1,6 +1,5 @@
 import * as React from "react"
 import * as mobileStyles from './home.module.scss'
-import mobileHero from '../images/conferenceThree.webp'
 import { StaticImage } from "gatsby-plugin-image";
 
 

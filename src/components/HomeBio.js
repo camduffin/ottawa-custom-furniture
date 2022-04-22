@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from "gatsby";
 
 const HomeBio = () => {
 
-    const bioImage = '../images/coffee-table.webp'
+    const bioImage = '../images/fireplaceWide.webp'
 
     const data = useStaticQuery(graphql`
 
