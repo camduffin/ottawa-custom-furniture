@@ -10,7 +10,6 @@ import HeroImage from '../components/Hero'
 const IndexPage = () => {
 
   return (
-        
         <Layout>
           <Seo title="Home" />
             <HeroImage />
