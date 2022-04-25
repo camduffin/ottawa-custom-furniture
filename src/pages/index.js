@@ -8,6 +8,7 @@ import HeroImage from '../components/Hero'
 
 
 const IndexPage = () => {
+  
 
   return (
         <Layout>
