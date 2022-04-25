@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as homeStyles from './home.module.scss'
-import image from '../images/conferenceNew.webp'
+import image from '../images/conferenceNew.jpg'
 import { Parallax } from 'react-parallax';
 
 
