@@ -5,11 +5,8 @@ import Contact from '../components/Contact'
 import HomeBio from '../components/HomeBio'
 import HeroImage from '../components/Hero'
 
-
-
 const IndexPage = () => {
   
-
   return (
         <Layout>
           <Seo title="Home" />

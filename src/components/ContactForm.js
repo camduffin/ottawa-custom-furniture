@@ -29,16 +29,12 @@ function ContactForm() {
             <label htmlFor="email" className="sr-only">Email</label>
             <input id="email" type="email" name="email" placeholder="Email" required />
 
-            {/* <label htmlFor="phone" className="sr-only">Phone Number</label>
-            <input type="text" id="phone-number" name="phone-number" placeholder="Phone # (   )-(   )-(    )" required/> */}
-
             <label htmlFor="message" className="sr-only">Message</label>
             {data.allContentfulGetAQuote.edges.map((edge) => {
                 return (
                     <textarea id="message" name="message" placeholder={edge.node.messageBoxPlaceholder} required/>
                 )
             })}
-
 
             <button type="submit" className={contactStyles.button}>Submit</button>
         </form>
