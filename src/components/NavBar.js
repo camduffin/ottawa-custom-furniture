@@ -13,6 +13,9 @@ const NavBar = () => {
                 <li>
                     <Link to="/#contact">Work Together</Link>
                 </li>
+                <li>
+                    <Link to="/terms">Terms of Sale</Link>
+                </li>
             </ul>
         </nav>
     )

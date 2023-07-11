@@ -254,7 +254,7 @@ ul {
 // Nav Bar
 
 .nav-container {
-    width: 30%;
+    width: 40%;
     padding: 10px;
 
     @include bigTabletMQ {
@@ -274,9 +274,8 @@ ul {
     
 
     a {
-        @include nav(1.5rem);
+        @include nav(1.8rem);
         color: $blue;
-        text-transform: capitalize;
         font-weight: 300;
         cursor: pointer;
         transition: all .13s ease-in-out;
